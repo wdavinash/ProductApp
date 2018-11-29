@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- This stylesheet contains specific styles for displaying
+         the map on this page. Replace it with your own styles as
+         described in the documentation:
+         https://developers.google.com/maps/documentation/javascript/tutorial
+    -->
+    <!-- link rel="stylesheet" href="/maps/documentation/javascript/cgc/demos.css">-->
+    <link rel="stylesheet" href="main.css">
+    </head>
+  <body style="background-color: #0000000d;">
+    <h3>Admin Panel</h3>
+    <div id="map" style="height: 250px;width: 100%;"></div>
+    
+    <h3>Client Side</h3>
+    <h5>Product List</h5>
+    <div id="products">
+      <table>
+        <thead>
+          <th>Product No</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Action</th>
+        </thead>
+        <tbody id="products_body">
+        </tbody>
+      </table>
+    </div>
+    <h5>Order List</h5>
+    <div id="order">
+      <table>
+        <thead>
+          <th>Order No</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Agent</th>
+          <th>Action</th>
+        </thead>
+        <tbody id="order_body">
+        </tbody>
+      </table>
+    </div>
+    
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZAHbI6X0aQds8mKGzkfaTFxwVZ8U6igY&callback=initMap"
+        async defer></script>
+  </body>
+</html>
